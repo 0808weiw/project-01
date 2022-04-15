@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        <title>兮夜老师</title>
+        <style>/* css样式表 网页装饰 */
+            /* css reset */
+            body{
+                margin: 0;/* 外边距 0不用给单位 */
+            }
+            .keyboard{/* . class选择器 */
+                position: absolute;/* 绝对定位 BFC */
+                left: 50%;
+                display: grid;/* 网格布局 */
+                /* 分为30列,每一列30像素 */
+                grid-template-columns: repeat(30,30px);
+                grid-template-rows: repeat(5,60px);
+                gap: 5px;/* 网格间距 */
+                /* width: 1050px; *//* 宽度: 200像素; */
+                /* height: 325px; *//* 高度 */ 
+                margin-top: 50px;/* 上下 左右 */
+                /* margin-left: -543px; */
+                background-color: #C5C5C5;/* 背景颜色: 原谅绿; */
+                padding: 20px;/* 内边距 */
+                border-radius: 20px;
+                transform: translateX(-50%);/* css3变换属性 移动自身当前X方向位移 */
+            }
+            .key{
+                grid-column: span 2;/* 合并单元格 */
+                background-color: #F3F3F3;
+                /* 边框属性 粗细 样式 颜色 */
+                border: 2px solid;
+                line-height: 60px;/* 行高=高度 垂直居中 */
+                text-align: center;/* 文本对齐方式 居中 */
+                border-radius: 5px;/* css3圆角属性 */
+            }
+            .key:hover{/* 当你鼠标移入到名字叫key里执行{}中代码 */
+                border-color: #fff;
+                /* color: #fff; */
+            }
+            .delete,.capslk,.enter{
+                grid-column: span 4;
+            }
+            .tab,.backslash,.ctrl,.command{
+                grid-column: span 3;
+            }
+            .shift{
+                grid-column: span 5;
+            }
+            .space{
+                grid-column: span 13;
+            }
+            /*
+                align="center"
+                center标签
+                maruqee标签
+                font标签
+
+            */
+        </style>
+    </head>
+    <body><!-- 写给用户看的 写给人看的 -->
+        <div class="keyboard"><!-- 盒子标签 -->
+            <div class="key">~</div>
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key">0</div>
+            <div class="key">-</div>
+            <div class="key">+</div>
+            <div class="key delete">Delete</div>
+            <div class="key tab">Tab</div>
+            <div class="key">q</div>
+            <div class="key">w</div>
+            <div class="key">e</div>
+            <div class="key">r</div>
+            <div class="key">t</div>
+            <div class="key">y</div>
+            <div class="key">u</div>
+            <div class="key">i</div>
+            <div class="key">o</div>
+            <div class="key">p</div>
+            <div class="key">[</div>
+            <div class="key">]</div>
+            <div class="key backslash">\</div>
+            <div class="key capslk">CapsLk</div>
+            <div class="key">a</div>
+            <div class="key">s</div>
+            <div class="key">d</div>
+            <div class="key">f</div>
+            <div class="key">g</div>
+            <div class="key">h</div>
+            <div class="key">j</div>
+            <div class="key">k</div>
+            <div class="key">l</div>
+            <div class="key">;</div>
+            <div class="key">'</div>
+            <div class="key enter">Enter</div>
+            <div class="key shift">Shift</div>
+            <div class="key">z</div>
+            <div class="key">x</div>
+            <div class="key">c</div>
+            <div class="key">v</div>
+            <div class="key">b</div>
+            <div class="key">n</div>
+            <div class="key">m</div>
+            <div class="key">,</div>
+            <div class="key">.</div>
+            <div class="key">/</div>
+            <div class="key shift">Shift</div>
+            <div class="key ctrl">Ctrl</div>
+            <div class="key">Win</div>
+            <div class="key">Alt</div>
+            <div class="key space">Space</div>
+            <div class="key">Alt</div>
+            <div class="key">Fn</div>
+            <div class="key command">Command</div>
+            <div class="key ctrl">Ctrl</div>
+        </div>
+    </body>
+</html>
+<!--
+    注释标签
+    绿色的
+    inline  空白间距
+    2013 -> 实现功能 
+    2020 -> 性能和效率 -> 降低维护成本
+
+    java php .net
+
+
+    外包 -> html css js(会用) jquery.js bootstrap 
+    写页面 -> 简单的交互
+
+
+    开发 -> html css js(精通) vue.js/react.js node.js
+    webapp -> uni-app  RN 跨平台开发 
+    小程序 
+    大数据可视化
+    9-15K -> 大前端方向
+    editplus -> 
+    
+    1 html5 css3 -> 1个月 -> 京东 -> 上线(服务器/域名)
+      js(javascript) -> 2个月 -> 封装jquery.js -> 花里胡哨
+    vscode
+    2 主流框架实战 -> 大量项目
+        vue.js/react.js -> 饿了么/网易云
+        node.js(express/koa) -> 后端 -> 技术博客 -> 
+        9-12K 入门
+    
+    3 职业架构 -> 设计模式 -> 封装 -> 阿飞 海牙
+
+    9-12K -> 全栈就业 -> 5个月 -> 12阶段 -> 7880 -> 预定 6380
+    15K -> 全栈架构 -> 6.5个月 -> 123阶段 9880 -> 预定 8380
+
+    在线 -> 保障师资 -> 
+    晚上8.30-10.30  一周12345 周六讲作业 周天约会
+
+    申请国家助学 -> 预定500 -> 一天十几块
+    阿里云ACA认证 -> 
+    分12期 -> 
+        支付宝 花呗
+        京东 白条
+        信用卡
+        利息 -> 1000+ -> 免息
+-->
